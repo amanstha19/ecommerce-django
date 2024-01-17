@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'E_shop.wsgi.application'
 
 
-# Database
+# Database 
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
