@@ -268,12 +268,6 @@ header {
 
 /* Merged styles from the previous code */
 
-.featured img {
-  width: 100%;
-  max-height: 450px;
-  object-fit: cover;
-}
-
 
 @media only screen and (max-width: 1200px) {
   .section-p1 {
@@ -439,9 +433,129 @@ header {
 }
 
 
-.product-card img {
-    width: 150px;
-    max-height: 100px;
-    object-fit: cover;
+.product-card {
+  flex: 0 0 calc(15% - 30px); /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+  position: relative; /* Add position relative for absolute positioning of buttons */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius for a softer look */
 }
 
+.product-card:hover {
+  background-color: #f0f0f0; /* Change background color slightly on hover */
+}
+
+.product-detail {
+  padding: 10px; /* Add padding for spacing */
+}
+
+.product-detail h4 {
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+.product-detail .btn {
+  width: 100%; /* Set button width to 100% */
+  padding: 10px; /* Add padding for spacing */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add border radius for a softer look */
+  cursor: pointer; /* Add cursor pointer for usability */
+}
+
+.product-detail .btn:hover {
+  background-color: #ff6347; /* Change button background color on hover */
+  color: #fff; /* Change button text color on hover */
+}
+
+
+.slider {
+  border: 1px solid #ccc; /* Add a mild border */
+  border-radius: 5px; /* Add border radius for a softer look */
+  overflow: hidden; /* Ensure content inside the slider doesn't overflow */
+}
+
+.slide {
+  display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+  display: block; /* Show only the active slide */
+}
+
+.slide img {
+  width: 100%; /* Make the images responsive */
+  display: block; /* Ensure the images are displayed as blocks */
+}
+
+  .footer {
+    background-color: #8399ee; /* Light gray background */
+    color: #0a0a0a; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-left {
+    margin-bottom: 10px; /* Add margin to separate social buttons from contact info */
+  }
+
+  .footer-left i {
+    font-size: 20px;
+    margin-right: 10px; /* Add margin between social buttons */
+  }
+
+  .footer-right {
+    margin-top: 10px; /* Add margin to separate copyright text from social buttons */
+  }
+
+  .left h6 {
+    margin-right: 10px; /* Adjust margin as needed */
+    color: #333; /* Change color as needed */
+    font-weight: bold; /* Add font-weight as needed */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Add pointer cursor */
+    transition: color 0.3s; /* Add smooth color transition */
+}
+
+.left h6:hover {
+    color: #555; /* Change hover color as needed */
+}
+
+.cart-button {
+    background-color: #555; /* Change background color as needed */
+    color: #fff; /* Change text color as needed */
+    padding: 10px 15px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s; /* Add smooth background color transition */
+}
+
+.cart-button:hover {
+    background-color: #777; /* Change hover background color as needed */
+}
+
+ /* Style for the login/register button */
+ .login-register-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Style for the view cart button */
+.cart-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Style for social media icons in the footer */
+.footer-left i {
+  margin-right: 10px;
+}
