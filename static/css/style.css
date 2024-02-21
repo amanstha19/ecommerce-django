@@ -487,7 +487,7 @@ header {
   display: block; /* Ensure the images are displayed as blocks */
 }
 
-  .footer {
+.footer {
     background-color: #8399ee; /* Light gray background */
     color: #0a0a0a; /* Dark text color */
     padding: 20px;
@@ -558,4 +558,54 @@ header {
 /* Style for social media icons in the footer */
 .footer-left i {
   margin-right: 10px;
+}
+
+/* Add styles for the product cards */
+.product-card {
+  flex: 0 0 calc(30% - 30px); /* Adjust as needed */
+  margin-bottom: 30px; /* Adjust as needed */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Add border radius for a softer look */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Add slight elevation on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Style the product image */
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure image covers the entire container */
+}
+
+/* Style the product details */
+.product-detail {
+  padding: 20px; /* Add padding for spacing */
+}
+
+.product-detail h4 {
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+/* Style the buttons */
+.product-detail .btn {
+  width: 100%; /* Set button width to 100% */
+  padding: 10px; /* Add padding for spacing */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add border radius for a softer look */
+  cursor: pointer; /* Add cursor pointer for usability */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.product-detail .btn:hover {
+  background-color: #ff6347; /* Change button background color on hover */
+  color: #fff; /* Change button text color on hover */
+}
+html{
+  scroll-behavior: smooth;
 }
